@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Ganagasabarinath | AI Developer</title>
+
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+
+<script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+<style>
+
+/* RESET */
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Poppins, sans-serif;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+background:#020617;
+color:white;
+}
+
+/* NAVBAR */
+
+.navbar{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:18px 10%;
+background:#020617;
+position:fixed;
+width:100%;
+z-index:1000;
+}
+
+.logo{
+color:#38bdf8;
+}
+
+.navbar ul{
+display:flex;
+list-style:none;
+}
+
+.navbar li{
+margin-left:25px;
+}
+
+.navbar a{
+text-decoration:none;
+color:white;
+font-weight:500;
+transition:0.3s;
+}
+
+.navbar a:hover{
+color:#38bdf8;
+}
+
+/* HERO */
+
+.hero{
+position:relative;
+height:100vh;
+display:flex;
+flex-direction:column;
+align-items:center;
+justify-content:center;
+text-align:center;
+overflow:hidden;
+}
+
+#particles-js{
+position:absolute;
+width:100%;
+height:100%;
+top:0;
+left:0;
+z-index:-1;
+}
+
+.profile{
+width:150px;
+border-radius:50%;
+border:4px solid #38bdf8;
+margin-bottom:20px;
+}
+
+.hero h1{
+font-size:40px;
+}
+
+.typing{
+color:#38bdf8;
+font-weight:bold;
+}
+
+.btn{
+display:inline-block;
+margin-top:20px;
+padding:12px 30px;
+background:#38bdf8;
+color:black;
+border-radius:5px;
+text-decoration:none;
+font-weight:600;
+transition:0.3s;
+}
+
+.btn:hover{
+transform:translateY(-4px);
+box-shadow:0 10px 20px rgba(0,0,0,0.4);
+}
+
+/* SECTION */
+
+section{
+padding:120px 10%;
+text-align:center;
+}
+
+/* ABOUT */
+
+#about{
+background:#0f172a;
+}
+
+#about p{
+max-width:900px;
+margin:auto;
+line-height:1.7;
+margin-bottom:15px;
+}
+
+/* SKILLS */
+
+#skills{
+background:#020617;
+}
+
+.skill{
+max-width:700px;
+margin:auto;
+text-align:left;
+}
+
+.progress{
+background:#1e293b;
+height:10px;
+border-radius:10px;
+margin-bottom:25px;
+overflow:hidden;
+}
+
+.progress span{
+display:block;
+height:100%;
+background:#38bdf8;
+width:0;
+animation:loadSkill 2s forwards;
+}
+
+@keyframes loadSkill{
+100%{width:var(--width);}
+}
+
+/* PROJECTS */
+
+#projects{
+background:#0f172a;
+}
+
+.project-container{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:25px;
+margin-top:40px;
+}
+
+.project-card{
+background:#1e293b;
+padding:25px;
+border-radius:10px;
+transition:0.3s;
+}
+
+.project-card:hover{
+transform:translateY(-10px);
+background:#334155;
+}
+
+/* TIMELINE */
+
+#timeline{
+background:#020617;
+}
+
+.timeline{
+max-width:600px;
+margin:auto;
+border-left:3px solid #38bdf8;
+padding-left:20px;
+text-align:left;
+}
+
+.timeline-item{
+margin-bottom:25px;
+}
+
+/* CONTACT */
+
+#contact{
+background:#0f172a;
+}
+
+form{
+display:flex;
+flex-direction:column;
+max-width:420px;
+margin:auto;
+gap:12px;
+}
+
+input,textarea{
+padding:12px;
+border:none;
+border-radius:5px;
+}
+
+button{
+padding:12px;
+background:#38bdf8;
+border:none;
+border-radius:5px;
+font-weight:600;
+cursor:pointer;
+}
+
+/* FOOTER */
+
+footer{
+text-align:center;
+padding:20px;
+background:#020617;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:768px){
+
+.navbar{
+flex-direction:column;
+}
+
+.navbar ul{
+margin-top:10px;
+}
+
+.hero h1{
+font-size:28px;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<nav class="navbar">
+
+<h2 class="logo">Ganagasabarinath</h2>
+
+<ul>
+<li><a href="#about">About</a></li>
+<li><a href="#skills">Skills</a></li>
+<li><a href="#projects">Projects</a></li>
+<li><a href="#timeline">Education</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+
+</nav>
+
+</header>
+
+
+<section class="hero">
+
+<div id="particles-js"></div>
+
+<img src="assets/profile.png" class="profile">
+
+<h1>Ganagasabarinath</h1>
+
+<h2><span class="typing"></span></h2>
+
+<a href="assets/resume.pdf" download class="btn">Download Resume</a>
+
+</section>
+
+
+<section id="about" data-aos="fade-up">
+
+<h2>About Me</h2>
+
+<p>
+I am Ganagasabarinath, a B.Tech student in Artificial Intelligence and Data Science at Dr. N.G.P Institute of Technology.
+</p>
+
+<p>
+My interests include Artificial Intelligence, Machine Learning and Full Stack Web Development.
+</p>
+
+<p>
+I have developed projects like Spam Detection System, Student Performance Prediction System and Smart Parking Web Application.
+</p>
+
+</section>
+
+
+<section id="skills" data-aos="fade-up">
+
+<h2>Skills</h2>
+
+<div class="skill">
+
+<p>Python</p>
+<div class="progress"><span style="--width:85%"></span></div>
+
+<p>Machine Learning</p>
+<div class="progress"><span style="--width:80%"></span></div>
+
+<p>React</p>
+<div class="progress"><span style="--width:75%"></span></div>
+
+<p>Java</p>
+<div class="progress"><span style="--width:70%"></span></div>
+
+</div>
+
+</section>
+
+
+<section id="projects" data-aos="fade-up">
+
+<h2>Projects</h2>
+
+<div class="project-container">
+
+<div class="project-card">
+<h3>Spam Detection System</h3>
+<p>Machine learning system for identifying spam messages.</p>
+</div>
+
+<div class="project-card">
+<h3>Student Performance Prediction</h3>
+<p>Predicts student results using ML algorithms.</p>
+</div>
+
+<div class="project-card">
+<h3>Smart Parking Web App</h3>
+<p>Web system for monitoring parking slots.</p>
+</div>
+
+</div>
+
+</section>
+
+
+<section id="timeline" data-aos="fade-up">
+
+<h2>Education Timeline</h2>
+
+<div class="timeline">
+
+<div class="timeline-item">
+<h3>B.Tech AI & Data Science</h3>
+<p>Dr. N.G.P Institute of Technology</p>
+</div>
+
+<div class="timeline-item">
+<h3>AI Projects</h3>
+<p>Spam Detection, Student Prediction</p>
+</div>
+
+</div>
+
+</section>
+
+
+<section id="contact" data-aos="fade-up">
+
+<h2>Contact</h2>
+
+<form>
+
+<input type="text" placeholder="Name">
+
+<input type="email" placeholder="Email">
+
+<textarea placeholder="Message"></textarea>
+
+<button type="submit">Send</button>
+
+</form>
+
+</section>
+
+
+<footer>
+
+<p>© 2026 Ganagasabarinath</p>
+
+</footer>
+
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+<script>
+
+/* SCROLL ANIMATION */
+
+AOS.init({
+duration:1200
+});
+
+/* TYPING ANIMATION */
+
+var typed = new Typed(".typing",{
+strings:["AI Developer","Machine Learning Enthusiast","Full Stack Developer"],
+typeSpeed:70,
+backSpeed:40,
+loop:true
+});
+
+/* PARTICLES */
+
+particlesJS("particles-js",{
+particles:{
+number:{value:80},
+size:{value:3},
+move:{speed:2}
+}
+});
+
+</script>
+
+</body>
+</html>
